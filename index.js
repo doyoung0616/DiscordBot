@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const client = new Discord.Client();
-const token = process.env.token;
+const token = 'NzczMzM4NDExMjcyNTAzMzA2.X6HxhQ.2VFc0SWH_EKhlomhIp1bmY4Mo8Y';
 const welcomeCNAME = "일반";
 const byeCNAME = "일반";
 const welcomeCComment = "안녕하세요!";
@@ -47,11 +47,12 @@ client.on('message', (msg) =>{
           .addField('대출리스트', '다이아')
           .addField('지민님', '40개', true)
           .addField('서우님', '10개', true)
-          .addField('Inline field title', 'Some value here', true)
-          .addField('Inline field title', 'Some value here1\nSome value here2\nSome value here3\n')
+          .addField('사람님', '0개', true)
+          .addField('준범님', '0개', true)
+          .addField('테스트', 'Some value here1\nSome value here2\nSome value here3\n')
           .addBlankField()
           .setTimestamp()
-          .setFooter('테스트', img)
+          .setFooter('System', img)
     
         msg.channel.send(embed)
       } else if(msg.content == '/help') {
